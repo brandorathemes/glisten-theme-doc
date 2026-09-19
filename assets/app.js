@@ -50,7 +50,7 @@
       .sort((a, b) => b.score - a.score);
   };
   const link = (a) =>
-    `<a href="${document.body.dataset.base}articles/${a.slug}.html" ${results ? 'class="article-link"' : ""}><span>${esc(a.title)}<small>${esc(a.summary)}</small></span></a>`;
+    `<a href="${document.body.dataset.base}articles/${a.slug}" ${results ? 'class="article-link"' : ""}><span>${esc(a.title)}<small>${esc(a.summary)}</small></span></a>`;
   function show() {
     if (!input) return;
     const q = input.value.slice(0, 200),
